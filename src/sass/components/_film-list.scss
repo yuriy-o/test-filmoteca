@@ -3,7 +3,7 @@
   margin-bottom: 40px;
   padding-top: 10px;
   //display: flex;
-   // flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
@@ -56,14 +56,12 @@
 }
 
 .item__capt {
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
-
 
   @media screen and (min-width: 1200px) {
     font-size: 19px;
@@ -72,11 +70,10 @@
 }
 
 .item__wrap {
-   //!
-min-width: 280px;
+  //!
+  min-width: 280px;
   display: flex;
   justify-content: space-between; //!
-
 }
 
 .item__genre {
@@ -115,7 +112,7 @@ min-width: 280px;
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.705); //!Додає тінь під рейтингом
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.705); //!Додає тінь під рейтингом
 
   @media screen and (min-width: 1200px) {
     width: 40px;
@@ -130,15 +127,15 @@ min-width: 280px;
     height: 30px;
 
     right: 0px; //! Встановити -5px, щоб змістилось праворуч
-    bottom:calc(100% - 30px); //! Додати + 5px, щоб змістилось вгору
+    bottom: calc(100% - 30px); //! Додати + 5px, щоб змістилось вгору
     font-size: 16px;
   }
   @include mq(tablet) {
     width: 70px;
     height: 35px;
-    
+
     right: 0px;
-    bottom:calc(100% - 35px);
+    bottom: calc(100% - 35px);
     font-size: 18px;
   }
   @include mq(desktop) {
@@ -146,7 +143,7 @@ min-width: 280px;
     height: 40px;
 
     right: 0px;
-    bottom:calc(100% - 40px);
+    bottom: calc(100% - 40px);
     font-size: 20px;
   }
 }
