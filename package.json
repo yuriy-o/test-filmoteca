@@ -1,11 +1,10 @@
-{
-  "name": "parcel-project-template",
+{  "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://TrueMolni.github.io/filmoteka-team-project-11",
+  "homepage": "https://yuriy-o.github.io/test-filmoteca",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /filmoteka-team-project-11/"
+    "build": "parcel build src/*.html --public-url /test-filmoteca/"
   },
   "repository": {
     "type": "git",
