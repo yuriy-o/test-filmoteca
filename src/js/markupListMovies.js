@@ -1,4 +1,4 @@
-const srcImgBase = 'https://image.tmdb.org/t/p/w500';
+const srcImgBase = 'https://image.tmdb.org/t/p/w400';
 
 function getGenres() {
   const { genres } = {
@@ -74,13 +74,14 @@ function createMarkup(res) {
             genresMarkup = `${genre[0]}, ${genre[1]}, ...other`;
           }
 
-
           let titleMarkup = '';
           let titleStr = String(title);
-          let titleArr= titleStr.slice(' ');
+          let titleArr = titleStr.slice(' ');
           if (titleArr.length < 34) {
             titleMarkup = titleStr;
-          } else { titleMarkup = titleArr.slice(0,33) + '...'; }
+          } else {
+            titleMarkup = titleArr.slice(0, 33) + '...';
+          }
 
           return `<li class="gallery__item film-card" data-modal-open data-id="${id}">
             <img src="${srcImgBase}${poster}" alt="${title}" class="img" id="${id}" />
