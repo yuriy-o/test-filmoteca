@@ -1,4 +1,5 @@
 import { getRefs } from './refs';
+import SnowCanvasBody from './snowfall555';
 
 import {
   setLightThemModalOurTeam,
@@ -34,6 +35,8 @@ function onDarkTheme() {
 
   refs.iconSun.classList.remove('hidden-icon');
   refs.iconMoon.classList.add('hidden-icon');
+
+  SnowCanvasBody.show({ count: 100 });
 }
 
 function onLightTheme() {
@@ -69,5 +72,7 @@ function setDefaultTheme() {
 
     refs.iconSun.classList.remove('hidden-icon');
     refs.iconMoon.classList.add('hidden-icon');
+
+    SnowCanvasBody.show({ count: 100 });
   }
 }
