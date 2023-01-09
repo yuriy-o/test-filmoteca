@@ -1,4 +1,4 @@
-const srcImgBase = 'https://image.tmdb.org/t/p/w400';
+const srcImgBase = 'https://image.tmdb.org/t/p/w300';
 
 function getGenres() {
   const { genres } = {
