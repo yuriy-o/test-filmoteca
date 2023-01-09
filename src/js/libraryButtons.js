@@ -42,7 +42,7 @@ function showPageMyLibrary(keyName) {
 
 function createMarkup(watchedArr) {
   refs.galleryItems.innerHTML = '';
-  const srcImgBase = 'https://image.tmdb.org/t/p/w500';
+  const srcImgBase = 'https://image.tmdb.org/t/p/w400';
   if (watchedArr.length >= 1) {
     const markup = watchedArr
       .map(
